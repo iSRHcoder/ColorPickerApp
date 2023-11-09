@@ -1,0 +1,15 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("src/Images/HD-wallpaper-colour-storm-art-colours-design-paintings-pattern (1).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 10rem;
+  background-blend-mode: overlay;
+}

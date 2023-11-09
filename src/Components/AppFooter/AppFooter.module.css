@@ -1,0 +1,15 @@
+.AppFooter {
+  position: fixed;
+  width: 100%;
+  height: 5%;
+  bottom: 0;
+  left: 0;
+  background-color: #07677a;
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-weight: 550;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.2rem;
+}

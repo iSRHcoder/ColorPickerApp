@@ -1,0 +1,32 @@
+.ColorList {
+  display: inline-block;
+}
+
+.ColorPicker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.colorPallete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  background-color: rgba(255, 255, 255, 1);
+  width: 40rem;
+  height: 5rem;
+  border-radius: 1rem;
+}
+
+.Div {
+  margin-top: 3.5rem;
+  margin-bottom: 3rem;
+}
+
+.Div > button {
+  margin-left: 1rem;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
