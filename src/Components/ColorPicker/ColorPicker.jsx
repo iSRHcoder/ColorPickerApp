@@ -619,42 +619,48 @@ const ColorPicker = () => {
   };
 
   return (
-    <div className={styles.ColorPicker}>
-      <div className={styles.Div}>
-        <Input
-          value={color}
-          enterKeyHandler={clickHandler}
-          changeHandler={(data) => {
-            setColor(data);
+    <div
+      style={{
+        margin: "auto",
+      }}
+    >
+      <div className={styles.ColorPicker}>
+        <div className={styles.Div}>
+          <Input
+            value={color}
+            enterKeyHandler={clickHandler}
+            changeHandler={(data) => {
+              setColor(data);
+            }}
+          />
+          <Button clickHandler={clickHandler} />
+        </div>
+        <div
+          style={{
+            width: "20rem",
+            height: "20rem",
+            backgroundColor: bgColor || boxColor,
           }}
-        />
-        <Button clickHandler={clickHandler} />
-      </div>
-      <div
-        style={{
-          width: "20rem",
-          height: "20rem",
-          backgroundColor: bgColor || boxColor,
-        }}
-      ></div>
-      <div className={styles.colorPallete}>
-        {allColor.map((color, index) => {
-          return (
-            <div
-              key={index}
-              onClick={() => clrClickPalleteHandler(index)}
-              style={{
-                width: "3rem",
-                height: "3rem",
-                backgroundColor: color,
-                marginLeft: ".6rem",
-                border: ".2rem solid black",
-                borderRadius: "50%",
-                overflow: "hidden",
-              }}
-            ></div>
-          );
-        })}
+        ></div>
+        <div className={styles.colorPallete}>
+          {allColor.map((color, index) => {
+            return (
+              <div
+                key={index}
+                onClick={() => clrClickPalleteHandler(index)}
+                style={{
+                  width: "3rem",
+                  height: "3rem",
+                  backgroundColor: color,
+                  marginLeft: ".6rem",
+                  border: ".2rem solid black",
+                  borderRadius: "50%",
+                  overflow: "hidden",
+                }}
+              ></div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
