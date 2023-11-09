@@ -576,6 +576,14 @@ const ColorPicker = () => {
       hex: "#000000",
       name: "BLACK",
     },
+    {
+      hex: "#808080",
+      name: "GREY",
+    },
+    {
+      hex: "#8F00FF",
+      name: "VIOLET",
+    },
   ];
 
   const findColor = () => {
